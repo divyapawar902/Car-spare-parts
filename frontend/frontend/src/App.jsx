@@ -12,7 +12,7 @@ function App() {
         <Route path="/" element={<Navigate to="/Login" />} />  // Redirect to Login by default
         <Route path="/Login" element={<Login />} />
         <Route path="/signup" element={<SignUp  />} />
-        <Route path="/forgotpass" element={<ForgotPassword  />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/resetpass" element={<ResetPassword  />} />
       </Routes>
     </Router>

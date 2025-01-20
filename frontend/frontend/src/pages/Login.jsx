@@ -49,11 +49,18 @@ const Login = () => {
             name="password"
             id="password"
             placeholder="Enter your password"
-            className="w-full text-black p-3 mb-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-orange-500"
+            className="w-full text-black p-3 mb-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-orange-500"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
           />
+
+          {/* Forgot Password Link */}
+          <div className="text-center mb-4">
+            <Link to="/forgot-password" className="text-orange-500 hover:underline">
+              Forgot Password?
+            </Link>
+          </div>
 
           {/* Login Button */}
           <button
